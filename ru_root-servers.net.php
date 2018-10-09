@@ -7,11 +7,11 @@
 <meta http-equiv="content-style-type" content="text/css" />
 <meta http-equiv="content-language" content="ru" />
 <meta name="generator" content="Pico" />
-<link rel="stylesheet" type="text/css" href="map.css" />
+<link rel="stylesheet" type="text/css" href="https://www.dns-zone.net/map/map.css" />
 
-<script type="text/javascript" src="openlayers/OpenLayers.js"></script>
+<script type="text/javascript" src="https://www.dns-zone.net/map/openlayers/OpenLayers.js"></script>
 <script type="text/javascript" src="https://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
-<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="https://www.dns-zone.net/map/util.js"></script>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -81,9 +81,9 @@ jumpTo(lon,lat,zoom);
 
 // Add used maker icons..
 icons = new Array();
-icons[0] = new Array('images/pin_green.png','12','21','0','1');
-icons[1] = new Array('images/pin_red.png','12','21','0','1');
-icons[2] = new Array('images/pin_blue.png','12','21','0','1');
+icons[0] = new Array('https://www.dns-zone.net/map/images/pin_green.png','12','21','0','1');
+icons[1] = new Array('https://www.dns-zone.net/map/images/pin_red.png','12','21','0','1');
+icons[2] = new Array('https://www.dns-zone.net/map/images/pin_blue.png','12','21','0','1');
 
 
 // Add markers
@@ -101,8 +101,8 @@ checkUtilVersion(4);
 
 	<div id="descriptionToggle" onclick="toggleInfo()">Показать карту</div>
 	<div id="description" class="hide">Эта карта показывает все 13 корневых серверов имен и автоматически проверяет их
-Достижимости. Затем это отображается графически на карте в виде зеленого или красного булавки.<br><br><img src=images/gruen.png width=8
-height=8> = Сервер имен является В сети<br><img src=images/rot.png width=8
+Достижимости. Затем это отображается графически на карте в виде зеленого или красного булавки.<br><br><img src=https://www.dns-zone.net/map/images/gruen.png width=8
+height=8> = Сервер имен является В сети<br><img src=https://www.dns-zone.net/map/images/rot.png width=8
 height=8> = Сервер имен является Не в сети<br><br><small>Stand: <?php $datum = date("d.m.Y"); echo $datum; ?> на <?php $uhrzeit = date("H:i:s"); echo $uhrzeit;
 ?> Час</small><br><br>Этот сценарий спонсировался <a href=http://www.dns-zone.net>www.dns-zone.net</a></div>
 	<div id="map"></div>
