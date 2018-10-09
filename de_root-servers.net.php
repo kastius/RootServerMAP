@@ -7,11 +7,11 @@
 <meta http-equiv="content-style-type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 <meta name="generator" content="Pico" />
-<link rel="stylesheet" type="text/css" href="map.css" />
+<link rel="stylesheet" type="text/css" href="https://www.dns-zone.net/map/map.css" />
 
-<script type="text/javascript" src="openlayers/OpenLayers.js"></script>
+<script type="text/javascript" src="https://www.dns-zone.net/map/openlayers/OpenLayers.js"></script>
 <script type="text/javascript" src="https://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
-<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="https://www.dns-zone.net/map/util.js"></script>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -81,9 +81,9 @@ jumpTo(lon,lat,zoom);
 
 // Add used maker icons..
 icons = new Array();
-icons[0] = new Array('images/pin_green.png','12','21','0','1');
-icons[1] = new Array('images/pin_red.png','12','21','0','1');
-icons[2] = new Array('images/pin_blue.png','12','21','0','1');
+icons[0] = new Array('https://www.dns-zone.net/map/images/pin_green.png','12','21','0','1');
+icons[1] = new Array('https://www.dns-zone.net/map/images/pin_red.png','12','21','0','1');
+icons[2] = new Array('https://www.dns-zone.net/map/images/pin_blue.png','12','21','0','1');
 
 
 // Add markers
@@ -101,8 +101,8 @@ checkUtilVersion(4);
 
 	<div id="descriptionToggle" onclick="toggleInfo()">Karteninformation anzeigen</div>
 	<div id="description" class="hide">iese Karte zeigt alle 13 Root-Nameserver, und überprüft diese automatisch auf seine
-Erreichbarkeit. Diese wird dann grafisch auf der Karte in Form einer grünen oder roten Stecknadel dargestellt.<br><br><img src=images/gruen.png width=8
-height=8> = Nameserver ist Online<br><img src=images/rot.png width=8
+Erreichbarkeit. Diese wird dann grafisch auf der Karte in Form einer grünen oder roten Stecknadel dargestellt.<br><br><img src=https://www.dns-zone.net/map/images/gruen.png width=8
+height=8> = Nameserver ist Online<br><img src=https://www.dns-zone.net/map/images/rot.png width=8
 height=8> = Nameserver ist Offline<br><br><small>Stand: <?php $datum = date("d.m.Y"); echo $datum; ?> um <?php $uhrzeit = date("H:i:s"); echo $uhrzeit;
 ?> Uhr</small><br><br>This script was sponsored by <a href=http://www.dns-zone.net>www.dns-zone.net</a></div>
 	<div id="map"></div>
