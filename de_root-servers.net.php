@@ -100,7 +100,7 @@ checkUtilVersion(4);
 <body onload="drawmap();">
 
 	<div id="descriptionToggle" onclick="toggleInfo()">Karteninformation anzeigen</div>
-	<div id="description" class="hide">iese Karte zeigt alle 13 Root-Nameserver, und überprüft diese automatisch auf seine
+	<div id="description" class="hide">Diese Karte zeigt alle 13 Root-Nameserver, und überprüft diese automatisch auf seine
 Erreichbarkeit. Diese wird dann grafisch auf der Karte in Form einer grünen oder roten Stecknadel dargestellt.<br><br><img src=https://www.dns-zone.net/map/images/gruen.png width=8
 height=8> = Nameserver ist Online<br><img src=https://www.dns-zone.net/map/images/rot.png width=8
 height=8> = Nameserver ist Offline<br><br><small>Stand: <?php $datum = date("d.m.Y"); echo $datum; ?> um <?php $uhrzeit = date("H:i:s"); echo $uhrzeit;
